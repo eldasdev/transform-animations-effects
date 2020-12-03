@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background-color: #183188;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container .card {
+    position: relative;
+    background-color: #ccc;
+    border-radius: 10px;
+    width: 270px;
+    height: 440px;
+    margin-left: 30px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.container .card:hover {
+    box-shadow: 0 1px 15px 4px rgba(123,172,255,0.329);
+}
+
+.container .card .imgbx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.container .card:hover .imgbx {
+    opacity: 0.5;
+}
+
+.container .card .imgbx img {
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+
+.container .card .content {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    bottom: -100%;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    bottom: 0;
+}
+
+.container .card:nth-child(1) .content {
+    background: linear-gradient(0deg, #491f8f, transparent);
+}
+
+.container .card:nth-child(2) .content {
+    background: linear-gradient(0deg, #d41e31, transparent);
+}
+
+.container .card:nth-child(3) .content {
+    background: linear-gradient(0deg, #333, transparent);
+}
+
+.container .card:nth-child(4) .content {
+    background: linear-gradient(0deg, #232323, transparent);
+}
+
+.container .card .content h2 {
+    margin: 0 0 10px;
+    padding: 0;
+    color: #000;
+    font-size: 20px;
+}
+
+.content h2 span {
+    color: #333333;
+    font-size: 16px;
+}
+
+.content ul {
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+.content ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 7px;
+}
+
+.content ul li a i {
+    font-size: 24px;
+    color: #ffffff;
+    background: #6d84b4;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.content ul li a i:hover {
+    background: transparent;
+}
+
